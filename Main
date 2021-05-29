@@ -1,0 +1,27 @@
+package com.hackerrank;
+
+import java.io.*;
+import java.lang.Math;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int number = 0;
+		String input = null;
+		int n = (int) (2 * Math.pow(10, 5));
+		try {
+			BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+			input = bufferedReader.readLine();
+			number = Integer.parseInt(input);
+			if (number < 0 || number <= n) {
+				for (int i = 1; i <= number; i++) {
+					Result.FizzBuzz(i);
+				}
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}
+
